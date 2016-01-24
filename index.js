@@ -80,6 +80,7 @@ var ScrollableTabView = React.createClass({
         <ScrollView
           horizontal
           pagingEnabled
+          automaticallyAdjustContentInsets={false}
           style={styles.scrollableContentIOS}
           contentContainerStyle={styles.scrollableContentContainerIOS}
           contentOffset={{x:this.props.initialPage * this.state.container.width}}
